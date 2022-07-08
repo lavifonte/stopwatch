@@ -41,21 +41,21 @@ namespace StopWatch
                     {
                         Console.WriteLine("How many hours would you like to add? Example: 1");
                         int hours = int.Parse(Console.ReadLine());
-                        Start(DateTime.Now.AddHours(hours), DateTime.Now);
+                        Start(DateTime.MinValue.AddHours(hours), DateTime.MinValue);
                         break;
                     }
                 case 2:
                     {
                         Console.WriteLine("How many minutes would you like to add? Example: 1");
                         int minutes = int.Parse(Console.ReadLine());
-                        Start(DateTime.Now.AddMinutes(minutes), DateTime.Now);
+                        Start(DateTime.MinValue.AddMinutes(minutes), DateTime.MinValue);
                         break;
                     }
                 case 3:
                     {
                         Console.WriteLine("How many seconds would you like to add? Example: 1");
                         int seconds = int.Parse(Console.ReadLine());
-                        Start(DateTime.Now.AddSeconds(seconds), DateTime.Now);
+                        Start(DateTime.MinValue.AddSeconds(seconds), DateTime.MinValue);
                         break;
                     }
 
