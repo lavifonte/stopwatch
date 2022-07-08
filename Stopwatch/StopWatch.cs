@@ -18,7 +18,6 @@ namespace StopWatch
             Time = time;
             CurrentTime = currentTime;
         }
-
         public static void Menu()
         {
             Console.Clear();
@@ -39,21 +38,21 @@ namespace StopWatch
                 case 0: System.Environment.Exit(0); break;
                 case 1:
                     {
-                        Console.WriteLine("How many hours would you like to add? Example: 1");
+                        Console.WriteLine("How many hours would you like to count? Example: 1");
                         int hours = int.Parse(Console.ReadLine());
                         Start(DateTime.MinValue.AddHours(hours), DateTime.MinValue);
                         break;
                     }
                 case 2:
                     {
-                        Console.WriteLine("How many minutes would you like to add? Example: 1");
+                        Console.WriteLine("How many minutes would you like to count? Example: 1");
                         int minutes = int.Parse(Console.ReadLine());
                         Start(DateTime.MinValue.AddMinutes(minutes), DateTime.MinValue);
                         break;
                     }
                 case 3:
                     {
-                        Console.WriteLine("How many seconds would you like to add? Example: 1");
+                        Console.WriteLine("How many seconds would you like to count? Example: 1");
                         int seconds = int.Parse(Console.ReadLine());
                         Start(DateTime.MinValue.AddSeconds(seconds), DateTime.MinValue);
                         break;
@@ -64,8 +63,6 @@ namespace StopWatch
             }
 
         }
-
-
         public static void Start(DateTime time, DateTime currentTime)
         {
             Console.Clear();
